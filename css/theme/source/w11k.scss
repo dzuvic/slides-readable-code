@@ -1,0 +1,99 @@
+/**
+ * Derived from  White theme Hakim El Hattab
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../bower_components/font-source-sans-pro/source-sans-pro.scss);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #FEFEFE;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+.reveal ul.no-dot {
+  list-style: none;
+}
+
+
+.reveal blockquote.myquotes:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.reveal blockquote.myquotes {
+  background-color: #ffffff;
+  border-left: 10px solid #ccc;
+  quotes: "\201C" "\201D";
+}
+
+.reveal .align-right {
+      position: absolute;
+      text-align: right;
+      right: 0px;
+      padding: 10px;
+}
+
+.reveal .align-left {
+      position: absolute;
+      text-align: left;
+      right: 0px;
+      padding: 10px;
+}
+
+.reveal .logo {
+  border: none;
+  box-shadow: none;
+}
+
+.reveal .logos {
+      text-align:center;
+      margin:50px auto;
+
+  a {
+      margin:0px 20px;
+      display:inline-block;
+      text-decoration:none;
+      color: $mainColor;
+  }
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
