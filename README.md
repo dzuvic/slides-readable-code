@@ -8,8 +8,9 @@ reveal.js.
 To view the slides install node, grunt-cli and bower. To start the server the usual workflow would be
 
     npm -g install grunt-cli
-    npm -g install bower
+    npm -g install bower    
     npm install
+    bower install
     grunt serve
     
 The following software is used and included:
